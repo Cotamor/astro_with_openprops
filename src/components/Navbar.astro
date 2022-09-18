@@ -1,0 +1,104 @@
+---
+import { Icon } from 'astro-icon'
+const navLinks = [
+  { name: 'Home', url: '/', style: 'transparent' },
+  { name: 'Pricing', url: '#', style: 'transparent' },
+  { name: 'About', url: '#', style: 'transparent' },
+  { name: 'Contact Me', url: '#', style: 'primary' },
+]
+---
+
+<nav class="container">
+  <div class="nav-container">
+    <Icon name="logo" width={200} />
+    <div class="nav-wrapper">
+      <button
+        class="btn btn--menu"
+        id="menu-btn"
+        aria-expanded="false"
+        aria-label="Open mobile nav"
+      >
+        <Icon name="feather:menu" width={25} />
+      </button>
+      <ul class="nav-links" role="navigation">
+        {
+          navLinks.map((link) => (
+            <li role="none" class="nav-link">
+              <a href={link.url} class={`btn btn--${link.style} `}>
+                {link.name}
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<script>
+  const menuBtn = document.querySelector('#menu-btn')
+  menuBtn.addEventListener('click', () => {
+    menuBtn.setAttribute(
+      'aria-expanded',
+      menuBtn.getAttribute('aria-expanded') === 'false' ? 'true' : 'false'
+    )
+  })
+</script>
+
+<style>
+  .nav-container {
+    display: flex;
+    justify-content: space-between;
+    padding: var(--size-3);
+    position: relative;
+  }
+  .nav-wrapper {
+    display: flex;
+    align-items: center;
+  }
+  .nav-links {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: var(--size-10);
+    text-align: center;
+    border: 2px solid var(--accent1);
+    padding-block: var(--size-5);
+    gap: var(--size-3);
+    inset-inline: 20px;
+    transform: translateY(-200%);
+    background-color: var(--bkg);
+  }
+  .nav-link {
+    font-size: var(--font-size-1);
+  }
+  .nav-link a:hover {
+    color: var(--accent2);
+  }
+
+  .btn--menu {
+    background-color: transparent;
+    display: grid;
+    place-items: center;
+  }
+
+  .btn--menu[aria-expanded='true'] + .nav-links {
+    transform: translateY(0);
+  }
+
+  @media (min-width: 900px) {
+    .nav-links {
+      flex-direction: row;
+      position: static;
+      border: none;
+      padding: none;
+      background: transparent;
+      transform: translateY(0);
+    }
+    .btn--menu {
+      display: none;
+    }
+  }
+</style>

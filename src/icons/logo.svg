@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="101.58981mm"
+   height="26.090784mm"
+   viewBox="0 0 101.5898 26.090784"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1.2 (b8e25be833, 2022-02-05)"
+   sodipodi:docname="logo_edasaki.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:pageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="1.0469406"
+     inkscape:cx="214.91191"
+     inkscape:cy="115.09727"
+     inkscape:window-width="1204"
+     inkscape:window-height="874"
+     inkscape:window-x="115"
+     inkscape:window-y="28"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="g69769"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0" />
+  <defs
+     id="defs2">
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient65287">
+      <stop
+         style="stop-color:#ec4899;stop-opacity:1"
+         offset="0"
+         id="stop65283" />
+      <stop
+         style="stop-color:#f87171;stop-opacity:1"
+         offset="1"
+         id="stop65285" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient52725"
+       inkscape:swatch="solid">
+      <stop
+         style="stop-color:#ec4899;stop-opacity:1;"
+         offset="0"
+         id="stop52723" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient52147"
+       inkscape:swatch="solid">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop52145" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient65287"
+       id="linearGradient65289"
+       x1="129.6456"
+       y1="111.44972"
+       x2="168.18549"
+       y2="118.77862"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1.9733339,0,0,1.9733339,-167.55586,-80.15204)" />
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-61.629018,-133.68477)">
+    <g
+       id="g69769"
+       inkscape:export-filename="C:\Users\cotam\Documents\Inkscape\logo_edasaki.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96">
+      <g
+         id="g29">
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:condensed;font-size:20.8844px;line-height:1.25;font-family:'Fira Sans Condensed';-inkscape-font-specification:'Fira Sans Condensed,  Heavy Condensed';fill:url(#linearGradient65289);fill-opacity:1;stroke:none;stroke-width:0.522109"
+           x="89.162758"
+           y="153.99794"
+           id="text57833"><tspan
+             sodipodi:role="line"
+             id="tspan57831"
+             style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:condensed;font-family:'Fira Sans Condensed';-inkscape-font-specification:'Fira Sans Condensed,  Heavy Condensed';fill:url(#linearGradient65289);fill-opacity:1;stroke-width:0.522109"
+             x="89.162758"
+             y="153.99794">EDASAKI</tspan></text>
+        <g
+           id="g69760"
+           transform="matrix(0.38923169,0,0,0.38923169,54.907313,89.618133)">
+          <circle
+             style="fill:#ec4899;fill-opacity:1;fill-rule:evenodd;stroke-width:0.264583"
+             id="path53"
+             cx="40.206142"
+             cy="160.23148"
+             r="20.014439" />
+          <circle
+             style="fill:#5957e9;fill-opacity:1;fill-rule:evenodd;stroke-width:0.264583"
+             id="circle55"
+             cx="37.2836"
+             cy="133.22885"
+             r="20.014439" />
+          <circle
+             style="fill:#f87171;fill-opacity:1;fill-rule:evenodd;stroke-width:0.264583"
+             id="circle159"
+             cx="63.896725"
+             cy="146.68669"
+             r="20.014439" />
+          <path
+             id="path66522"
+             style="opacity:1;fill:#e37fc6;fill-opacity:1;fill-rule:evenodd;stroke-width:0.999999"
+             d="m 213.97461,483.95117 a 75.645121,75.645121 0 0 0 -0.11133,0.0391 75.645121,75.645121 0 0 0 -5.18555,2.26172 75.645121,75.645121 0 0 0 -5,2.64453 75.645121,75.645121 0 0 0 -4.79101,3.00977 75.645121,75.645121 0 0 0 -4.55078,3.35937 75.645121,75.645121 0 0 0 -4.28906,3.68946 75.645121,75.645121 0 0 0 -4,4 75.645121,75.645121 0 0 0 -3.68946,4.28711 75.645121,75.645121 0 0 0 -3.35937,4.55273 75.645121,75.645121 0 0 0 -3.00977,4.78906 75.645121,75.645121 0 0 0 -2.64258,5.00196 75.645121,75.645121 0 0 0 -2.26172,5.18359 75.645121,75.645121 0 0 0 -1.8164,5.19141 75.645121,75.645121 0 0 0 -17.30664,-2.00586 75.645121,75.645121 0 0 0 -60.720706,30.61914 75.64512,75.64512 0 0 0 0.136719,0.13672 75.64512,75.64512 0 0 0 8.640627,6.46875 75.64512,75.64512 0 0 0 9.47265,5.17187 75.64512,75.64512 0 0 0 10.11329,3.77149 75.64512,75.64512 0 0 0 10.54492,2.29492 75.64512,75.64512 0 0 0 10.76562,0.76953 75.64512,75.64512 0 0 0 9.38282,-0.58398 75.64512,75.64512 0 0 0 9.23828,-1.74414 75.64512,75.64512 0 0 0 8.95117,-2.87696 75.645121,75.645121 0 0 0 0.72851,2.7207 75.645121,75.645121 0 0 0 1.86914,5.33985 75.645121,75.645121 0 0 0 2.26172,5.18555 75.645121,75.645121 0 0 0 2.64258,5 75.645121,75.645121 0 0 0 3.00977,4.79101 75.645121,75.645121 0 0 0 3.35937,4.55078 75.645121,75.645121 0 0 0 3.68946,4.28711 75.645121,75.645121 0 0 0 4,4 75.645121,75.645121 0 0 0 4.28906,3.69141 75.645121,75.645121 0 0 0 4.55078,3.35937 75.645121,75.645121 0 0 0 4.79101,3.00782 75.645121,75.645121 0 0 0 5,2.64453 75.645121,75.645121 0 0 0 5.18555,2.26172 75.645121,75.645121 0 0 0 5.33984,1.86914 75.645121,75.645121 0 0 0 4.92774,1.32031 75.64512,75.64512 0 0 0 3.47461,-22.41211 75.64512,75.64512 0 0 0 -25.99609,-57.06055 75.645121,75.645121 0 0 0 14.94921,-44.99609 75.645121,75.645121 0 0 0 -2.58398,-19.5918 z"
+             transform="scale(0.26458333)" />
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

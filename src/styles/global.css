@@ -22,25 +22,19 @@ svg {
   --bkg: rgba(15, 23, 42, 1);
   --bkg-alt: rgba(20, 33, 76, 1);
   --text: rgba(224, 231, 255, 1);
-  --textAlt: rgb(142, 152, 205);
+  --textAlt: rgba(142, 152, 205, 1);
   --accent1: rgba(89, 87, 233, 1);
-  --accent2: rgb(236, 70, 153, 1);
-  --accent3: rgb(248, 113, 113, 1);
+  --accent2: rgba(236, 70, 153, 1);
+  --accent3: rgba(248, 113, 113, 1);
   --muted: rgba(172, 179, 202, 1);
   --white: rgba(250, 251, 255, 1);
   --gradient: linear-gradient(95deg, var(--accent2), var(--accent3));
 }
 
-@media (min-width: 768px) {
-  html {
-    font-size: 130%;
-  }
-}
-
 body {
   font-family: 'Inter', sans-serif;
   font-weight: 400;
-  line-height: 1.55;
+  /* line-height: 1.55; */
   max-width: 2000px;
   margin: auto;
   background-color: var(--bkg);
@@ -51,6 +45,7 @@ body {
 .wrapper {
   overflow: hidden;
   display: grid;
+  gap: 10px;
   grid-template-rows: auto 1fr auto;
   min-height: 100vh;
 }
@@ -63,12 +58,12 @@ main {
 
 .container {
   width: 100%;
-  max-width: 1500px;
+  max-width: 1200px;
   margin: auto;
 }
 .container-sm {
   width: 100%;
-  max-width: 1200px;
+  max-width: 1000px;
   margin: auto;
 }
 .container-xs {
@@ -130,6 +125,10 @@ small {
   font-size: var(--font-size-0);
 }
 
+li {
+  list-style: none;
+}
+
 .grid-sm {
   display: grid;
   place-items: center;
@@ -170,6 +169,7 @@ small {
   text-decoration: none;
   padding: var(--size-2) var(--size-fluid-4);
   border-radius: var(--radius-1);
+  border: none;
   cursor: pointer;
 }
 
@@ -185,21 +185,8 @@ small {
   background-color: var(--muted);
 }
 
-.btn--menu {
- background-color: transparent;
- border: none;
- display: grid;
-  place-items: center;
-  padding-inline: var(--size-2);
-}
-
-/* need to check */
-.btn--menu[aria-expanded='ture'] + .nav-links {
-  transform: translateY(0);
-}
-
 .blur {
-  position: relative
+  position: relative;
 }
 
 .blur::after,
@@ -213,11 +200,11 @@ small {
 }
 
 .blue::after {
-  background-color:rgba(89, 87, 233, 1);
+  background-color: rgba(89, 87, 233, 0.5);
   transform: rotate(-20deg);
 }
 .blur::before {
-  background-color:rgba(236, 70, 153, 1); 
+  background-color: rgba(236, 70, 153, 0.5);
   transform: rotate(20deg);
 }
 
@@ -228,3 +215,4 @@ small {
   }
 }
 
+/* Nav */
