@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+/* @import 'open-props/style'; */
+/* @import 'open-props/normalize'; */
+/* @import 'open-props/buttons';  */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+img,
+picture,
+svg {
+  max-width: 100%;
+  display: block;
+}
+
+:root {
+  /* Colors */
+  --bkg: rgba(15, 23, 42, 1);
+  --bkg-alt: rgba(20, 33, 76, 1);
+  --text: rgba(224, 231, 255, 1);
+  --textAlt: rgb(142, 152, 205);
+  --accent1: rgba(89, 87, 233, 1);
+  --accent2: rgb(236, 70, 153, 1);
+  --accent3: rgb(248, 113, 113, 1);
+  --muted: rgba(172, 179, 202, 1);
+  --white: rgba(250, 251, 255, 1);
+  --gradient: linear-gradient(95deg, var(--accent2), var(--accent3));
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 130%;
+  }
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  line-height: 1.55;
+  max-width: 2000px;
+  margin: auto;
+  background-color: var(--bkg);
+  color: var(--text);
+}
+
+/* Layout */
+.wrapper {
+  overflow: hidden;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+}
+
+main {
+  display: grid;
+  gap: var(--size-fluid-6);
+  padding: var(--size-fluid-5) var(--size-fluid-2);
+}
+
+.container {
+  width: 100%;
+  max-width: 1500px;
+  margin: auto;
+}
+.container-sm {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+}
+.container-xs {
+  width: 100%;
+  max-width: 900px;
+  margin: auto;
+}
+
+/* Utils */
+.text-bkg {
+  color: var(--bkg);
+}
+.text-bkg-alt {
+  color: var(--bkg-alt);
+}
+.text-text {
+  color: var(--text);
+}
+.text-text-alt {
+  color: var(--textAlt);
+}
+.text-muted {
+  color: var(--muted);
+}
+.text-white {
+  color: var(--white);
+}
+.text-accent1 {
+  color: var(--accent1);
+}
+.text-accent2 {
+  color: var(--accent2);
+}
+.text-accent3 {
+  color: var(--accent3);
+}
+.text-gradient {
+  color: transparent;
+  background: var(--gradient);
+  background-clip: text;
+}
+
+h1 {
+  font-size: var(--font-size-fluid-3);
+  font-weight: 600;
+  line-height: 1.1;
+}
+h2 {
+  font-size: var(--font-size-fluid-2);
+  font-weight: 600;
+  line-height: 1.1;
+}
+h3 {
+  font-size: var(--font-size-fluid-1);
+  font-weight: 600;
+  line-height: 1.1;
+}
+small {
+  font-size: var(--font-size-0);
+}
+
+.grid-sm {
+  display: grid;
+  place-items: center;
+  gap: var(--size-fluid-1);
+}
+
+.grid-md {
+  display: grid;
+  place-items: center;
+  gap: var(--size-fluid-3);
+}
+
+.grid-lg {
+  display: grid;
+  place-items: center;
+  gap: var(--size-fluid-3);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+.narrow {
+  max-width: 80ch;
+}
+
+/* Components */
+
+.btn {
+  color: var(--white);
+  text-decoration: none;
+  padding: var(--size-2) var(--size-fluid-4);
+  border-radius: var(--radius-1);
+  cursor: pointer;
+}
+
+.btn--primary {
+  background-color: var(--accent1);
+}
+
+.btn--secondary {
+  background: var(--gradient);
+}
+
+.btn--muted {
+  background-color: var(--muted);
+}
+
+.btn--menu {
+ background-color: transparent;
+ border: none;
+ display: grid;
+  place-items: center;
+  padding-inline: var(--size-2);
+}
+
+/* need to check */
+.btn--menu[aria-expanded='ture'] + .nav-links {
+  transform: translateY(0);
+}
+
+.blur {
+  position: relative
+}
+
+.blur::after,
+.blur::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  filter: blur(35px);
+  border-radius: 50%;
+}
+
+.blue::after {
+  background-color:rgba(89, 87, 233, 1);
+  transform: rotate(-20deg);
+}
+.blur::before {
+  background-color:rgba(236, 70, 153, 1); 
+  transform: rotate(20deg);
+}
+
+@media (min-width: 768px) {
+  .blur::after,
+  .blur::before {
+    filter: blur(120px);
+  }
+}
+
