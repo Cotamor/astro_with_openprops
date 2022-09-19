@@ -2,12 +2,12 @@
   {
     "icon": "feather:code",
     "name":"Custom Coding",
-    "content" : "Vel eget eu vestibulum mauris et ut hendrerit aliquam vel nibh amet, vitae at purus dui semper vel facilisis enim"
+    "content" : "Vel eget eu vestibulum mauris et ut hendrerit aliquam vel nibh amet, vitae at purus dui "
   },
   {
     "icon": "feather:users",
     "name":"User Friendly",
-    "content" : "Vel eget eu vestibulum mauris et ut hendrerit aliquam vel nibh amet, vitae at purus dui semper vel facilisis enim"
+    "content" : "Vel eget eu vestibulum mauris et ut hendrerit aliquam vel nibh amet, vitae at purus dui at purus dui semper vel facilisis enim"
   },
   {
     "icon": "feather:search",
@@ -17,16 +17,16 @@
   {
     "icon": "feather:trending-up",
     "name":"Build for Growth",
-    "content" : "Vel eget eu vestibulum mauris et ut hendrerit aliquam vel nibh amet, vitae at purus dui semper vel facilisis enim"
+    "content" : "Vel eget eu vestibulum mauris et ut hendrerit aliquam vel nibh amet, vitae at purus dui semper vel at purus dui semper vel facilisis enim"
   },
   {
     "icon": "feather:smartphone",
     "name":"Ready for Mobile",
-    "content" : "Vel eget eu vestibulum mauris et ut hendrerit aliquam vel nibh amet, vitae at purus dui semper vel facilisis enim"
+    "content" : "Vel eget eu vestibulum mauris et ut hendrerit aliquam vel nibh amet, vitae "
   },
   {
     "icon": "feather:home",
     "name":"Feels like you",
-    "content" : "Vel eget eu vestibulum mauris et ut hendrerit aliquam vel nibh amet, vitae at purus dui semper vel facilisis enim"
+    "content" : "Vel eget eu vestibulum mauris et ut hendrerit aliquam vel nibh amet, vitae at purus dui semper "
   }
 ]
