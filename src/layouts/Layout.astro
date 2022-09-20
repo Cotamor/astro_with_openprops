@@ -1,5 +1,5 @@
 ---
-import Navbar from '../components/Navbar.astro';
+import Navbar from '../components/Navbar.astro'
 import '../styles/global.css'
 export interface Props {
   title: string
@@ -19,7 +19,7 @@ const { title } = Astro.props
   </head>
   <body>
     <div class="wrapper">
-      <Navbar/>
+      <Navbar />
       <main>
         <slot />
       </main>
@@ -28,7 +28,9 @@ const { title } = Astro.props
       </footer>
     </div>
     <script>
-      document.querySelector('#copyrightYear').textContent = new Date().getFullYear().toString()
+      document.querySelector('#copyrightYear').textContent = new Date()
+        .getFullYear()
+        .toString()
     </script>
   </body>
 </html>

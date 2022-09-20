@@ -8,31 +8,31 @@ const navLinks = [
 ]
 ---
 
-<nav class="container">
-  <div class="nav-container">
-    <Icon name="logo" width={200} />
-    <div class="nav-wrapper">
-      <button
-        class="btn btn--menu"
-        id="menu-btn"
-        aria-expanded="false"
-        aria-label="Open mobile nav"
-      >
-        <Icon name="feather:menu" width={25} />
-      </button>
-      <ul class="nav-links" role="navigation">
-        {
-          navLinks.map((link) => (
-            <li role="none" class="nav-link">
-              <a href={link.url} class={`btn btn--${link.style} `}>
-                {link.name}
-              </a>
-            </li>
-          ))
-        }
-      </ul>
-    </div>
+<nav class="container nav-container">
+  <!-- <div class="nav-container"> -->
+  <Icon name="logo" width={200} class="logo" />
+  <div class="nav-wrapper">
+    <button
+      class="btn btn--menu"
+      id="menu-btn"
+      aria-expanded="false"
+      aria-label="Open mobile nav"
+    >
+      <Icon name="feather:menu" width={25} />
+    </button>
+    <ul class="nav-links" role="navigation">
+      {
+        navLinks.map((link) => (
+          <li role="none" class="nav-link">
+            <a href={link.url} class={`btn btn--${link.style} `}>
+              {link.name}
+            </a>
+          </li>
+        ))
+      }
+    </ul>
   </div>
+  <!-- </div> -->
 </nav>
 
 <script>
@@ -49,8 +49,8 @@ const navLinks = [
   .nav-container {
     display: flex;
     justify-content: space-between;
-    padding: var(--size-3);
-    position: relative;
+    align-items: center;
+    padding: var(--size-fluid-2);
   }
   .nav-wrapper {
     display: flex;
@@ -86,6 +86,10 @@ const navLinks = [
 
   .btn--menu[aria-expanded='true'] + .nav-links {
     transform: translateY(0);
+  }
+
+  .logo {
+    width: cal(var(--size-fluid-6) * 0.75);
   }
 
   @media (min-width: 900px) {

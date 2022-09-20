@@ -1,18 +1,30 @@
 ---
-import {Icon} from 'astro-icon';
-import Hero from '../components/Hero.astro';
-import Services from '../components/Services.astro';
+import { Icon } from 'astro-icon'
+import Hero from '../components/Hero.astro'
+import Pricing from '../components/Pricing.astro'
+import Reviews from '../components/Reviews.astro'
+import Services from '../components/Services.astro'
 import Layout from '../layouts/Layout.astro'
 ---
 
 <Layout title="Welcome to Astro.">
-  <Hero/>
+  <Hero />
 
   <section class="programmer container blur grid-sm">
-    <Icon name='programmer' width={400} aria-hidden='true' alt='Programmer Picture' class='programmer-icon' />
+    <Icon
+      name="programmer"
+      width={400}
+      aria-hidden="true"
+      alt="Programmer Picture"
+      class="programmer-icon"
+    />
   </section>
 
-  <Services/>
+  <Services />
+
+  <Reviews />
+
+  <Pricing />
 </Layout>
 
 <style>
