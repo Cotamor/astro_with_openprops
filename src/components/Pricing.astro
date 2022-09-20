@@ -3,99 +3,116 @@ import Icon from 'astro-icon'
 import data from '../data/pricing.js'
 ---
 
-<section class="container grid-lg">
-  <h2 class="h1 section-header">Price for Everyone</h2>
-  <p class="text-muted narrow section-sub-header">
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus,
-    maxime.
-  </p>
-  <div class="card-wrapper">
-    {
-      data.map((card) => (
-        <div class={`card grid-md ${card.featured ? 'featured' : ''}`}>
-          <div class="card-price">{card.price}</div>
-          <div class="card-plan">{card.plan}</div>
-          <p class="card-description">{card.description}</p>
-          <ul class="detail-list">
-            {card.details.map((detail) => (
-              <li class="detail">
-                <Icon name="fe:check-circle-o" width={25} /> {detail}
-              </li>
-            ))}
-          </ul>
-          <a href="#" class="btn btn--secondary">
-            {card.button.text}
-          </a>
-          <div>{card.subtext}</div>
-        </div>
-      ))
-    }
+<section class="container">
+  <div class="price-wrapper">
+    <h2 class="h2 section-header">Price for Everyone</h2>
+    <p class="text-muted narrow section-sub-header">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus,
+      maxime.
+    </p>
+    <div class="card-wrapper">
+      {
+        data.map((card) => (
+          <div class={`card grid-md ${card.featured ? 'featured' : ''}`}>
+            <div class="card-price">{card.price}</div>
+            <div class="card-plan">{card.plan}</div>
+            <p class="card-description">{card.description}</p>
+            <ul class="detail-list">
+              {card.details.map((detail) => (
+                <li class="detail">
+                  <Icon name="fe:check-circle-o" width={25} /> {detail}
+                </li>
+              ))}
+            </ul>
+            <a
+              href="#"
+              class={`btn ${card.featured ? 'btn--secondary' : 'btn--primary'}`}
+            >
+              {card.button.text}
+            </a>
+            <div class="card-subtext">{card.subtext}</div>
+          </div>
+        ))
+      }
+    </div>
   </div>
-</section>
 
-<style>
-  .section-header {
-  }
-  .section-sub-header {
-    text-align: center;
-    font-size: var(--font-size-1);
-  }
-  .card-wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: var(--size-fluid-2);
-  }
-  .card {
-    padding: var(--size-4);
-    border: 1px solid var(--text-alt);
-  }
-  .card.featured {
-    position: relative;
-    border-color: var(--accent2);
-    border-width: 3px;
-  }
-  .card.featured::before {
-    position: absolute;
-    content: 'featured';
-    top: -2.5%;
-    font-size: var(--font-size-1);
-    background-color: var(--accent2);
-    border-radius: var(--radius-round);
-    padding-inline: var(--size-fluid-1);
-  }
-  .card-price {
-    font-size: var(--font-size-fluid-3);
-    font-weight: 600;
-  }
-  .card-plan {
-    border-radius: var(--radius-round);
-    background-color: var(--text-alt);
-    padding-inline: var(--size-2);
-    padding-block: var(--size-1);
-    font-size: var(--font-size-fluid-0);
-    text-transform: uppercase;
-    color: var(--bkg);
-    font-weight: 600;
-  }
-  .detai-list {
-  }
-  .detail {
-    display: flex;
-    align-items: center;
-    gap: var(--size-2);
-  }
-
-  @media (min-width: 992px) {
-    .card-wrapper {
+  <style>
+    .price-wrapper {
       display: grid;
       place-items: center;
-      grid-template-columns: repeat(3, 300px);
-      gap: var(--size-fluid-1);
+      gap: var(--size-fluid-3);
+    }
+    .section-sub-header {
+      text-align: center;
+      font-size: var(--font-size-1);
+      margin-bottom: var(--size-6);
+    }
+    .card-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: var(--size-fluid-2);
+    }
+    .card {
+      padding: var(--size-4);
+      border: 1px solid var(--text-alt);
     }
     .card.featured {
-      transform: scale(1.05);
+      position: relative;
+      border-color: var(--accent2);
       border-width: 3px;
     }
-  }
-</style>
+    .card.featured::before {
+      position: absolute;
+      content: 'featured';
+      top: -2.5%;
+      font-size: var(--font-size-1);
+      background-color: var(--accent2);
+      border-radius: var(--radius-round);
+      padding-inline: var(--size-fluid-1);
+    }
+    .card-price {
+      font-size: var(--font-size-fluid-2);
+      font-weight: 600;
+    }
+    .card-plan {
+      border-radius: var(--radius-round);
+      background-color: var(--text-alt);
+      padding-inline: var(--size-2);
+      padding-block: var(--size-1);
+      font-size: var(--font-size-0);
+      text-transform: uppercase;
+      color: var(--bkg);
+      font-weight: 600;
+    }
+    .card-description {
+      text-align: center;
+      font-size: var(--font-size-fluid-0);
+    }
+    .detail {
+      display: flex;
+      align-items: center;
+      gap: var(--size-2);
+      margin-bottom: var(--size-1);
+      font-size: var(--font-size-1);
+    }
+    .card-subtext {
+      font-size: var(--font-size-0);
+      text-align: center;
+    }
+
+    @media (min-width: 992px) {
+      .card-wrapper {
+        display: grid;
+        place-items: center;
+        grid-template-columns: repeat(3, 300px);
+        gap: var(--size-fluid-1);
+      }
+      .card.featured {
+        transform: scale(1.05);
+        border-width: 3px;
+      }
+    }
+  </style>
+</section>

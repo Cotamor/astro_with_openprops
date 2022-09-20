@@ -1,0 +1,58 @@
+---
+import { Icon } from 'astro-icon'
+const data = [
+  {
+    icon: 'simple-icons:amd',
+    alt: 'AMD Logo',
+  },
+  {
+    icon: 'simple-icons:500px',
+    alt: '500 Logo',
+  },
+  {
+    icon: 'simple-icons:abbvie',
+    alt: 'Abbvie Logo',
+  },
+  {
+    icon: 'simple-icons:bbc',
+    alt: 'BBC Logo',
+  },
+  {
+    icon: 'simple-icons:astonmartin',
+    alt: 'Aston Martin Logo',
+  },
+  {
+    icon: 'simple-icons:asda',
+    alt: 'Asda Logo',
+  },
+]
+---
+
+<section class="container grid-sm">
+  <h2 class="h2">Happy Client</h2>
+  <div class="client-logo-container">
+    {
+      data.map((item) => (
+        <Icon
+          name={item.icon}
+          width="120"
+          hight="85"
+          alt={item.alt}
+          class="text-muted client-logo"
+        />
+      ))
+    }
+  </div>
+</section>
+
+<style>
+  .client-logo-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0 var(--size-fluid-3);
+  }
+  .client-logo {
+    flex: 0 1 var(--size-fluid-5);
+  }
+</style>

@@ -9,8 +9,7 @@ const navLinks = [
 ---
 
 <nav class="container nav-container">
-  <!-- <div class="nav-container"> -->
-  <Icon name="logo" width={200} class="logo" />
+  <Icon name="logo" width={150} class="logo" />
   <div class="nav-wrapper">
     <button
       class="btn btn--menu"
@@ -18,7 +17,7 @@ const navLinks = [
       aria-expanded="false"
       aria-label="Open mobile nav"
     >
-      <Icon name="feather:menu" width={25} />
+      <Icon name="feather:menu" width={20} />
     </button>
     <ul class="nav-links" role="navigation">
       {
@@ -32,7 +31,6 @@ const navLinks = [
       }
     </ul>
   </div>
-  <!-- </div> -->
 </nav>
 
 <script>
@@ -64,10 +62,9 @@ const navLinks = [
     left: 0;
     top: var(--size-10);
     text-align: center;
-    border: 2px solid var(--accent1);
-    padding-block: var(--size-5);
+    border-bottom: 2px solid var(--accent1);
+    padding-block-end: var(--size-5);
     gap: var(--size-3);
-    inset-inline: 20px;
     transform: translateY(-200%);
     background-color: var(--bkg);
   }
@@ -88,8 +85,10 @@ const navLinks = [
     transform: translateY(0);
   }
 
-  .logo {
-    width: cal(var(--size-fluid-6) * 0.75);
+  @media (min-width: 768px) {
+    .logo {
+      width: 200px;
+    }
   }
 
   @media (min-width: 900px) {
